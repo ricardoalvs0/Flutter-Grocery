@@ -68,7 +68,7 @@ class HomeScreen extends StatelessWidget {
                                                                 pageBuilder: (context, animation, secondaryAnimation) =>
                                                                     FadeTransition(
                                                                         opacity: animation,
-                                                                        child: DetailsScreen(product: demo_products[index])
+                                                                        child: DetailsScreen(product: demo_products[index], onProductAdd: () {})
                                                                     ),
                                                             )
                                                         );
