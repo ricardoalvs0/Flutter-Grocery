@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:animation_2/models/User.dart';
 import '../../../constants.dart';
 
 class HomeHeader extends StatelessWidget {
@@ -24,7 +25,7 @@ class HomeHeader extends StatelessWidget {
                 style: Theme.of(context).textTheme.caption,
               ),
               Text(
-                "Caesar Rincon",
+                userDemo.userName,
                 style: Theme.of(context)
                     .textTheme
                     .subtitle1!
@@ -34,7 +35,7 @@ class HomeHeader extends StatelessWidget {
           ),
           CircleAvatar(
             backgroundColor: Colors.transparent,
-            backgroundImage: AssetImage("assets/images/profile.png"),
+            backgroundImage: AssetImage(userDemo.userAvatar),
           )
         ],
       ),

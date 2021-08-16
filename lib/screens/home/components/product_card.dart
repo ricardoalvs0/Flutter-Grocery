@@ -1,7 +1,7 @@
 import 'package:animation_2/components/fav_btn.dart';
 import 'package:animation_2/components/price.dart';
 import 'package:animation_2/models/Product.dart';
-import 'package:animation_2/screens/deatils/details_screen.dart';
+import 'package:animation_2/screens/details/details_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
