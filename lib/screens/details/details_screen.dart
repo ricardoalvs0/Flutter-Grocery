@@ -32,7 +32,9 @@ class _DetailsScreenState extends State<DetailsScreen> {
                 Container(
                   width: double.infinity,
                   color: Color(0xFFF8F8F8),
-                  child: Image.asset(widget.product.image!),
+                  child: Hero(
+                      tag: widget.product.title!,
+                      child: Image.asset(widget.product.image!)),
                 ),
                 Positioned(
                   bottom: -20,
@@ -65,7 +67,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
               "Cabbage (comprising several cultivars of Brassica oleracea) is a leafy green, red (purple), or white (pale green) biennial plant grown as an annual vegetable crop for its dense-leaved heads. It is descended from the wild cabbage (B. oleracea var. oleracea), and belongs to the cole crops or brassicas, meaning it is closely related to broccoli and cauliflower (var. botrytis); Brussels sprouts (var. gemmifera); and Savoy cabbage (var. sabauda).",
               style: TextStyle(
                 color: Color(0xFFBDBDBD),
-                height: 1.8,
+                height: 1.6,
               ),
             ),
           ),
